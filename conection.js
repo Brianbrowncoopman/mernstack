@@ -5,3 +5,5 @@ const objetobd = mongoose.connection
 
 objetobd.on('connected', ()=>{console.log('conexion correcta a mongoDB')})
 objetobd.on('cerror', ()=>{console.log('error en la coneccion a mongoDB')})
+
+module.exports = mongoose
